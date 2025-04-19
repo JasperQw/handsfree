@@ -1,0 +1,10 @@
+cff-version: "1.2.0"
+message: "If you use this dataset, please cite it as below."
+authors:
+  - family-names: "Husein"
+    given-names: "Zolkepli"
+title: "Malay-Dataset: Speech Dataset from IIUM Confession texts"
+date-released: 2018
+url: "https://github.com/huseinzol05/malaya-speech/tree/master/data/iium"
+repository-code: "https://github.com/huseinzol05/malaya-speech/tree/master/data/iium"
+type: dataset
