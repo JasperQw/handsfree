@@ -1,51 +1,58 @@
-# Welcome to your Expo app 👋
+# DAX Voice Assistant - Handsfree Frontend
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Project Structures
 
-## Get started
+| Folder          |Content                                                                                              |
+|----------------------|---------------------------------------------------------------------------------------------------------|
+|  **app**     | Containing the screen files for file-based routing  |
+|  **common**     | Containing the codes shared across different modules   |
+|  **modules**     | Containing the codes for different modules   |
 
-1. Install dependencies
+## Common File Structures
 
-   ```bash
-   npm install
-   ```
+| Folder          |Content                                                                                              |
+|----------------------|---------------------------------------------------------------------------------------------------------|
+|  **api**     | Containing API calling functions  |
+|  **components**     | Containing reusable UI components   |
+|  **constants**     | Containing the reusable constant values   |
+|  **data**     | Containing mock data   |
+|  **hooks**     | Containing custom React Hooks   |
+|  **stores**     | Containing the codes for Zustand store   |
+|  **types**     | Containing Typescripts types   |
+|  **utils**     | Containing the utilities functions   |
 
-2. Start the app
+## Modules
 
-   ```bash
-    npx expo start
-   ```
+| Folder          |Content                                                                                              |
+|----------------------|---------------------------------------------------------------------------------------------------------|
+|  **driver**     | Containing codes for driver-related implementations  |
+|  **sos**     | Containing codes for SOS-related implementations   |
+|  **voice-assistant**     | Containing codes for the implementations of voice assistant|
+|  **websocket**     | Containing codes to handle the Web Socket connections, events emitting and events listening   |
+|  **home**     | Containing UI components for Home page   |
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## Installation Guides
+### 1. Install Dependencies
 
 ```bash
-npm run reset-project
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. Connect to Your Android Real Devices
+Plug your android device with your laptop using a cable
 
-## Learn more
+### 3. Expose Backend Port to Android Device Port
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+adb reverse tcp:5000 tcp:5000
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### 4. Start the Backend Application
 
-## Join the community
+Refer to the [installation guides](https://github.com/JasperQw/handsfree/blob/main/handsfree-be/README.md) here
 
-Join our community of developers creating universal apps.
+### 5. Start the app
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-# handsfree-fe
+```bash
+npx expo run:android
+```
