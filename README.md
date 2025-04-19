@@ -1,81 +1,74 @@
-# 🤖 DAX AI Assistant – Handsfree
-DAX AI Assistant is a voice-activated, hands-free system designed to enhance road safety and convenience for e-hailing and delivery drivers in Malaysia.
+# DAX Voice Assistant - Handsfree Backend
 
-## 📂 Project Structures
 
-| 📁 Folder          |✨ Content                                                                                              |
+## Project Structures
+
+| Folder          |Content                                                                                              |
 |----------------------|---------------------------------------------------------------------------------------------------------|
-|  **handsfree-be**     | Containing backend application & installation guides  |
-|  **handsfree-fe**     | Containing frontend application & installation guides |
-|  **handsfree-eval**   | Containing jupyter notebook for machine learning model evaluation |
+|  **agent**     | Containing codes for AI Agent implementation with **SmolAgents**  |
+|  **database**     | Containing codes for **SQLite** database connection and operations |
+|  **speech**   | Containing codes for **Speech Recognition** and **Noise Reduction** implementation |
+|  **websocket**   | Containing codes for real-time bidirectional Web Socket connection and the implementation of real-time audio streaming and processing |
+|  **lib**   | Containing helper functions |
 
 
-## 📚 Project Resources
-
-| 🔗 Resource          |🌐 Link                                                                                                 |
-|----------------------|---------------------------------------------------------------------------------------------------------|
-| 🧠 Pitch Deck     | [View on Canva](https://www.canva.com/design/DAGkZAjYwKw/5Xs-gyU3BhZAZKuO0wrJCQ/view?utm_content=DAGkZAjYwKw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he82ba88cc3) |
-| 📃 Documentation     | [View on Google Document](https://docs.google.com/document/d/1TX2a6lx0_AFkOTKpydGjF57h4HRl_6X5cUk275dIC6g/edit?tab=t.0) |
-| 🎨 Figma Prototype   | [View on Figma](https://www.figma.com/design/iMYYMaCDqtL5fQEn8U7n9C/UM-Hackathon?node-id=0-1&t=SDS0En4heBDCH6Sb-1) |
 
 
-## 🧩 Key Functionalities
-All functionalities are hands-free!
-| 📦 Module                        | 🛠️ Prime Function                                                                 |
-|----------------------------------|------------------------------------------------------------------------------------|
-| 📢 Trip Initiation       | <ul> <li>Accept / reject incoming orders</li> <li>Screen navigation</li> <li>Read order details (current / incoming)</li> <li> Get latest message updates from the passenger chat </li> <li>Send messages to passenger </li> </ul>        |
-| 🌐 In-Ride Communication   | <ul> <li>Translates conversations between driver and passenger on the fly via voice </li> <ul>        |
-| 📞 On Demand Communication         |  <ul> <li> Initiates calls to customer</li> <li> Initiates calls to emergency contacts</li> <ul>          |
-| 🌧️ Navigation Support         | <ul> <li> Route clarification with a summary of current route</li> <li> Real-time updates on traffic conditions   </li> <li> Immediate guidance in flood situation   </li> </ul>                    |
-| 🚨 Incident Response | <ul> <li> Shaking-triggered SOS alert</li> <li> Continue / cancel SOS alert</li> <ul>              |
+## Installation Guides
+### 1. Create Virtual Environment in Visual Studio Code
 
+Refer to https://code.visualstudio.com/docs/python/environments#_creating-environments to create virtual environment in python.
 
-## 🧑‍💻 User Interaction Scenario
-- Drivers trigger actions via wake word and voice commands.
+### 2. Activate Virtual Environment
 
-- Assistant reads aloud order details and messages.
-  
-- Multilingual translation happens in real time during conversation.
+After that, activate virtual environment using terminal command
 
-- Drivers call customers or trigger SOS alerts hands-free.
+For **MacOS**:
 
-- Weather navigation support and general driving advice is voice-initiated.
+```bash
+source .venv/bin/activate
+```
 
+For **Windows with CMD**:
 
-## 🏗️ Solution Architecture
-<img width="731" alt="image" src="https://github.com/user-attachments/assets/e7757697-2dc0-4f7c-9921-d4454989e146" />
+```bash
+.\venv\Scripts\activate.bat
+```
 
+For **Windows with Powershell**:
 
-- **Frontend**: React Native + TypeScript
+```bash
+.\venv\Scripts\activate.ps1
+```
 
-- **Backend**: Python + Flask
+For **Windows with Unix Like Shell (exp: Git Bash CLI)**:
 
-- **Communication Protocol**: Web Socket for real-time audio streaming and bidirectional communication
+```bash
+source .venv/Scripts/activate
+```
 
-- **AI Agent**: SmolAgents + Gemini 
-  
-- **Noise Reduction**: DeepFilterNet 3
+### 3. Install Python Packages
 
-- **Speech Recognition**: 
-   1) **Mesolitica** - Speech-to-Text (STT) model for Malaysian dialects
-   2) **Google Speech Recognition** - For wake word detection
+Then, install the python packages
 
+```bash
+pip install -r requirements.txt
+```
 
-## 📊 Data Utilization
-- No custom training — using pre-trained machine learning models
+### 4. Environment Variable
 
-- Mesolitica for STT in Manglish and Malay
+Create a **.env** file in root directory, and put below environment variables into it (may refer to the **.env.example** file)
 
-- Gemini for accurate, low-hallucination multilingual translation
+```bash
+FLASK_APP=main
+GEMINI_API_KEY=<<FILL IN YOUR API_KEY>>
+MESOLITICA_TOKEN=<<FILL IN YOUR MESOLITICA TOKEN>>
+```
 
-- DeepFilterNet 3 for noise reduction
+### 5. Start Flask Application
 
+After all completed, run below command to start the flask application.
 
-## 🎯 Personalization Strategies
-🗣️ Language Customization: Supports Malaysian English, Bahasa, Mandarin, Tamil
-
-👨‍👩‍👧‍👦 Emergency Contact Setup: Voice or manual addition for SOS feature
-
-🔇 HEX AI Toggle: Enable or disable voice assistant with a button
-
-
+```bash
+flask run
+```
