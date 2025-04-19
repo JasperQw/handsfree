@@ -43,7 +43,7 @@ All functionalities are hands-free!
 
 
 ## 🏗️ Solution Architecture
-<img width="731" alt="image" src="https://github.com/user-attachments/assets/3274ca48-7457-48b9-ab38-fd80c74b7964" />
+<img width="731" alt="image" src="https://github.com/user-attachments/assets/e7757697-2dc0-4f7c-9921-d4454989e146" />
 
 
 - **Frontend**: React Native + TypeScript
