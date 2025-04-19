@@ -50,6 +50,8 @@ All functionalities are hands-free!
 
 - **Backend**: Python + Flask
 
+- **Communication Protocol**: Web Socket for real-time audio streaming and bidirectional communication
+
 - **AI Agent**: SmolAgents + Gemini 
   
 - **Noise Reduction**: DeepFilterNet 3
