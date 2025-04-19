@@ -14,7 +14,7 @@ DAX AI Assistant is a voice-activated, hands-free system designed to enhance roa
 
 | 🔗 Resource          |🌐 Link                                                                                                 |
 |----------------------|---------------------------------------------------------------------------------------------------------|
-| 🧠 Pitch Deck     | [View on Canva](https://www.canva.com/design/DAGkZAjYwKw/5Xs-gyU3BhZAZKuO0wrJCQ/view?utm_content=DAGkZAjYwKw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he82ba88cc3) |
+| 🧠 Pitch Deck     | [View on Google Drive](https://drive.google.com/file/d/1MuBt-2m-xiwpzQfk2jaE7WEK0j7-Xc0n/view?usp=sharing) |
 | 📃 Documentation     | [View on Google Document](https://docs.google.com/document/d/1TX2a6lx0_AFkOTKpydGjF57h4HRl_6X5cUk275dIC6g/edit?tab=t.0) |
 | 🎨 Figma Prototype   | [View on Figma](https://www.figma.com/design/iMYYMaCDqtL5fQEn8U7n9C/UM-Hackathon?node-id=0-1&t=SDS0En4heBDCH6Sb-1) |
 
